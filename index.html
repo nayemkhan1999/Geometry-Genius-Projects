@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genius</title>
+    <!-- Daisy-UI link & Tailwind-CSS Link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen px-4">
+    <main>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="card bg-base-100 w-full shadow-sm items-center">
+          <img
+            class="w-[243px] h-[194px] mt-5"
+            src="/images/Triangle.png"
+            alt="Shoes"
+          />
+
+          <div class="$$card-body space-y-4">
+            <h2 class="text-center font-bold text-2xl mt-4">Triangle</h2>
+            <p class="text-center">Area (A) = 0.5 * b * h</p>
+            <div class="flex">
+              <input
+                class="w-20 h-6 bg-[#F1F1F1] text-black border-none rounded px-3"
+                type="text"
+                id="triangle-base"
+                placeholder="b"
+              />
+              <p class="px-2">cm</p>
+              <input
+                class="w-20 h-6 bg-[#F1F1F1] text-black border-none rounded px-3"
+                type="text"
+                id="triangle-height"
+                placeholder="h"
+              />
+              <p class="px-2">cm</p>
+            </div>
+            <div>
+              <p class="text-lg font-semibold">
+                Area:
+                <span id="areaSpen" class="text-sky-400 font-bold text-xl">
+                </span
+                ><span class="text-xs">cm<sup>2</sup></span>
+              </p>
+            </div>
+            <button
+              onclick="triangleFunction()"
+              class="btn btn-info text-white w-full mt-3 mb-4"
+            >
+              Calculate
+            </button>
+          </div>
+        </div>
+        <!-- card Rectangle  -->
+        <div class="card bg-base-100 w-full shadow-sm items-center">
+          <img
+            class="w-[243px] h-[194px] mt-5"
+            src="/images//Rectangle.png"
+            alt="Shoes"
+          />
+
+          <div class="$$card-body space-y-4">
+            <h2 class="text-center font-bold text-2xl mt-4">Rectangle</h2>
+            <p class="text-center">Area (A) = w * l</p>
+            <div class="flex">
+              <input
+                class="w-20 h-6 bg-[#F1F1F1] text-black border-none rounded px-3"
+                type="text"
+                id="rectangle-width"
+                placeholder="w"
+              />
+              <p class="px-2">cm</p>
+              <input
+                class="w-20 h-6 bg-[#F1F1F1] text-black border-none rounded px-3"
+                type="text"
+                id="rectangle-length"
+                placeholder="l"
+              />
+              <p class="px-2">cm</p>
+            </div>
+            <div>
+              <p class="text-lg font-semibold">
+                Area:
+                <span
+                  id="rectangle-Area"
+                  class="text-sky-400 font-bold text-xl"
+                >
+                </span
+                ><span class="text-xs">cm<sup>2</sup></span>
+              </p>
+            </div>
+            <button
+              onclick="rectangleFunction()"
+              class="btn btn-info text-white w-full mt-3 mb-4"
+            >
+              Calculate
+            </button>
+          </div>
+        </div>
+        <!-- Card Parallelogram -->
+        <div class="card bg-base-100 w-full shadow-sm items-center">
+          <img
+            class="w-[243px] h-[194px] mt-5"
+            src="/images///Parallelogram.png"
+            alt="Shoes"
+          />
+
+          <div class="$$card-body space-y-4">
+            <h2 class="text-center font-bold text-2xl mt-4">Parallelogram</h2>
+            <p class="text-center">Area (A) = b * h</p>
+            <div class="flex">
+              <input
+                class="w-20 h-6 bg-[#F1F1F1] text-black border-none rounded px-3"
+                type="text"
+                id="parallelogram-base"
+                placeholder="b"
+              />
+              <p class="px-2">cm</p>
+              <input
+                class="w-20 h-6 bg-[#F1F1F1] text-black border-none rounded px-3"
+                type="text"
+                id="parallelogram-height"
+                placeholder="h"
+              />
+              <p class="px-2">cm</p>
+            </div>
+            <div>
+              <p class="text-lg font-semibold">
+                Area:
+                <span
+                  id="parallelogram-Area"
+                  class="text-sky-400 font-bold text-xl"
+                >
+                </span
+                ><span class="text-xs">cm<sup>2</sup></span>
+              </p>
+            </div>
+            <button
+              onclick="parallelogramFunction()"
+              class="btn btn-info text-white w-full mt-3 mb-4"
+            >
+              Calculate
+            </button>
+          </div>
+        </div>
+        <!-- Card Rhombus  -->
+        <div class="card bg-base-100 w-full shadow-sm items-center">
+          <img
+            class="w-[243px] h-[194px] mt-5"
+            src="/images////Rhombus.png"
+            alt="Shoes"
+          />
+
+          <div class="$$card-body space-y-4">
+            <h2 class="text-center font-bold text-2xl mt-4">Rhombus</h2>
+            <p class="text-center">
+              Area (A) = 0.5 * d <span><sub>1</sub></span> * d <sub>2</sub>
+            </p>
+            <div class="flex">
+              <input
+                class="w-20 h-6 bg-[#F1F1F1] text-black border-none rounded px-3"
+                type="text"
+                id="rhombus-dOne"
+                placeholder="d1"
+              />
+              <p class="px-2">cm</p>
+              <input
+                class="w-20 h-6 bg-[#F1F1F1] text-black border-none rounded px-3"
+                type="text"
+                id="rhombus-dTwo"
+                placeholder="d2"
+              />
+              <p class="px-2">cm</p>
+            </div>
+            <div>
+              <p class="text-lg font-semibold">
+                Area:
+                <span id="rhombus-Area" class="text-sky-400 font-bold text-xl">
+                </span
+                ><span class="text-xs">cm<sup>2</sup></span>
+              </p>
+            </div>
+            <button
+              onclick="callFunction()"
+              class="btn btn-info text-white w-full mt-3 mb-4"
+            >
+              Calculate
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- =========================JavaScript========================= -->
+    <script src="Script-File/Triangle.js"></script>
+    <script src="Script-File/Rectangle.js"></script>
+    <script src="Script-File/Parallelogram.js"></script>
+    <script src="Script-File/All-Function-Calculate.js"></script>
+    <script src="Script-File/Function-Call.js"></script>
+  </body>
+</html>
