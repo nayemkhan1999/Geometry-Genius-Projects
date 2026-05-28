@@ -5,10 +5,16 @@
         const base = parseFloat(inputValue)
         return base 
     }
-    // Show The Display Area Calculate ===========>
+    // =========== Triangle Show The Display Area Calculate =========>
     function showTheDisplay(display,area){
         const showText = document.getElementById(display,area)
         showText.innerText = area
         return showText
-
+    }
+    // =================== Rectangle Function ==================
+    function rectangle (rectangleValue){
+        const rectangleInputValue = document.getElementById(rectangleValue)
+        const inputValue = rectangleInputValue.value
+        const base = parseFloat(inputValue)
+        return base
     }

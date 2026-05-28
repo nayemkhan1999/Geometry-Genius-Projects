@@ -1,4 +1,4 @@
-// Triangle Function =========>
+// ==================== Triangle Function =========>
 function triangleFunction (){
     // get Input Value collection ==>
     const triangleFirstInput = triangle('triangle-base')
@@ -11,3 +11,16 @@ function triangleFunction (){
     const showArea = showTheDisplay('areaSpen')
     showArea.innerText = calculateResult
 }
+// ========================= Rectangle Function ========>
+    function rectangleFunction(){
+        const rectangleFirstInput = rectangle('rectangle-width')
+        const rectangleSecondInput = rectangle('rectangle-length')
+
+        // get calculate rectangle Area ===>
+            const calculateResult = rectangleFirstInput * rectangleSecondInput
+
+        // Show The Result Rectangle Area =======>
+            const showRectangleArea = showTheDisplay('rectangle-Area')
+            showRectangleArea.innerText = calculateResult
+
+    }
