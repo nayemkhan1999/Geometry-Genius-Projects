@@ -38,5 +38,25 @@ function triangleFunction (){
             // Get The Result And Show the Display ==>
                 const showRhombusArea = showTheDisplay('rhombus-Area')
                 showRhombusArea.innerText = calculateRhombus
-
         }
+    // ======================= Pentagon Function ====================>
+        function pentagonFunction(){
+            const pentagonFirstInput = pentagon('pentagonP')
+            const pentagonSecondInput = pentagon('pentagonB')
+            // get The Calculate Pentagon ===
+            const calculatePentagon = 0.5 * pentagonFirstInput * pentagonSecondInput
+            // Get The Result and Show the Display =====>
+                const showThePentagonArea = showTheDisplay('pentagon-Area')
+                showThePentagonArea.innerText = calculatePentagon
+        }
+        // =========================== Ellipse Function ==================>
+            function ellipseFunction (){
+                const ellipseFirstInput = ellipse('ellipseA')
+                const ellipseSecondInput = ellipse('ellipseB')
+                // get The Calculate Ellipse ==
+                const calculateEllipse = 3.1416 * ellipseFirstInput * ellipseSecondInput
+                // Get The Result And Show the display ====>
+                    const showEllipseResult = showTheDisplay('ellipse-Area')
+                    showEllipseResult.innerText = calculateEllipse
+            }
+

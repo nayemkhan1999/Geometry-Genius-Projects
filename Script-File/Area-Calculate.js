@@ -31,5 +31,18 @@
         const inputValue = rhombusInputValue.value 
         const base = parseFloat(inputValue)
         return base 
-
+    }
+    // ======================== Pentagon Function =====================>
+    function pentagon (pentagonValue){
+        const pentagonInputValue = document.getElementById(pentagonValue)
+        const inputValue = pentagonInputValue.value 
+        const base = parseFloat(inputValue)
+        return base
+    }
+    // ========================= Ellipse Function ===================>
+    function ellipse (ellipseValue){
+        const ellipseInputValue = document.getElementById(ellipseValue)
+        const inputValue = ellipseInputValue.value 
+        const base = parseFloat(inputValue)
+        return base 
     }

@@ -195,6 +195,92 @@
             </button>
           </div>
         </div>
+        <!-- Card Pentagon -->
+        <div class="card bg-base-100 w-full shadow-sm items-center">
+          <img
+            class="w-[243px] h-[194px] mt-5"
+            src="/images/////Pentagon.png"
+            alt="Shoes"
+          />
+
+          <div class="$$card-body space-y-4">
+            <h2 class="text-center font-bold text-2xl mt-4">Pentagon</h2>
+            <p class="text-center">Area (A) = 0.5 * p * b</p>
+            <div class="flex">
+              <input
+                class="w-20 h-6 bg-[#F1F1F1] text-black border-none rounded px-3"
+                type="text"
+                id="pentagonP"
+                placeholder="P"
+              />
+              <p class="px-2">cm</p>
+              <input
+                class="w-20 h-6 bg-[#F1F1F1] text-black border-none rounded px-3"
+                type="text"
+                id="pentagonB"
+                placeholder="b"
+              />
+              <p class="px-2">cm</p>
+            </div>
+            <div>
+              <p class="text-lg font-semibold">
+                Area:
+                <span id="pentagon-Area" class="text-sky-400 font-bold text-xl">
+                </span
+                ><span class="text-xs">cm<sup>2</sup></span>
+              </p>
+            </div>
+            <button
+              onclick="pentagonFunction()"
+              class="btn btn-info text-white w-full mt-3 mb-4"
+            >
+              Calculate
+            </button>
+          </div>
+        </div>
+        <!-- Card Ellipse  -->
+        <div class="card bg-base-100 w-full shadow-sm items-center">
+          <img
+            class="w-[243px] h-[194px] mt-5"
+            src="/images//////Ellipse.png"
+            alt="Shoes"
+          />
+
+          <div class="$$card-body space-y-4">
+            <h2 class="text-center font-bold text-2xl mt-4">Ellipse</h2>
+            <p class="text-center">Area (A) = πab</p>
+            <div class="flex">
+              <input
+                class="w-20 h-6 bg-[#F1F1F1] text-black border-none rounded px-3"
+                type="text"
+                id="ellipseA"
+                placeholder="a"
+              />
+              <p class="px-2">cm</p>
+              <input
+                class="w-20 h-6 bg-[#F1F1F1] text-black border-none rounded px-3"
+                type="text"
+                id="ellipseB"
+                placeholder="b"
+              />
+              <p class="px-2">cm</p>
+            </div>
+            <div>
+              <p class="text-lg font-semibold">
+                Area:
+                <span id="ellipse-Area" class="text-sky-400 font-bold text-xl">
+                </span
+                ><span class="text-xs">cm<sup>2</sup></span>
+              </p>
+            </div>
+            <button
+              onclick="ellipseFunction()"
+              class="btn btn-info text-white w-full mt-3 mb-4"
+            >
+              Calculate
+            </button>
+          </div>
+        </div>
       </div>
     </main>
     <!-- =========================JavaScript========================= -->
