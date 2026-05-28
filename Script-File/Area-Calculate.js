@@ -18,3 +18,10 @@
         const base = parseFloat(inputValue)
         return base
     }
+    // =============== Parallelogram Function =============>
+    function parallelogram (parallelogramValue){
+        const parallelogramInputValue = document.getElementById(parallelogramValue)
+        const inputValue = parallelogramInputValue.value
+        const base = parseFloat(inputValue)
+        return base 
+    }
