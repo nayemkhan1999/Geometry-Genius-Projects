@@ -28,6 +28,15 @@ function triangleFunction (){
             // Show The Result Parallelogram Display ==>
             const showParallelogramArea = showTheDisplay('parallelogram-Area')
             showParallelogramArea.innerText = calculateResult
-
+        }
+    // ========================== Rhombus Function ==========================>
+        function rhombusFunction (){
+            const rhombusFirstInput = rhombus('rhombus-dOne')
+            const rhombusSecondInput = rhombus('rhombus-dTwo')
+            // get the calculate Rhombus ==>
+                const calculateRhombus = 0.5 * rhombusFirstInput * rhombusSecondInput
+            // Get The Result And Show the Display ==>
+                const showRhombusArea = showTheDisplay('rhombus-Area')
+                showRhombusArea.innerText = calculateRhombus
 
         }
